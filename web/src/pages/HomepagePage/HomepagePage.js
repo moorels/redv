@@ -2,9 +2,7 @@ import { Link, routes } from '@redwoodjs/router'
 import { MetaTags } from '@redwoodjs/web'
 import { useAuth } from '@redwoodjs/auth'
 
-
 const HomepagePage = () => {
-
   const logmeout = useAuth()
   return (
     <>
@@ -18,29 +16,15 @@ const HomepagePage = () => {
       <h1>HomepagePage</h1>
       <p>
         Find me in <code>./web/src/pages/HomepagePage/HomepagePage.js</code>
-
-      <p></p>
-
-        <Link to={routes.homepage()}>Home</Link>
-
+        <p></p>
+        <Link to={routes.HomepagePage()}>Home</Link>
         <p></p>
         <Link to={routes.login()}>Login</Link>
         <p></p>
         <Link to={routes.login()}>Login</Link>
         <p>
-        <button onClick={() => logmeout.logOut()}>Log Out</button>
-
+          <button onClick={() => logmeout.logOut()}>Log Out</button>
         </p>
-
-
-
-
-
-
-
-
-
-
       </p>
     </>
   )
